@@ -1,0 +1,16 @@
+# dotenv environment variables file
+.env
+
+# OS Files
+.DS_Store
+
+# node modules
+node_modules
+
+# build
+build
+
+# dist
+dist
+
+logs
