@@ -30,7 +30,13 @@ const Component = React.memo(({ output }) => {
     const [workspaces, setWorkspaces] = useState([]);
     const [focusedSpace, setFocusedSpace] = useState([]);
 
-    const displayId = parseInt(window.location.pathname.split("/")[1]);
+    let displayId = parseInt(window.location.pathname.split("/")[1], 10);
+    // This is dumb
+    // But whatever IDK,
+    // Also test how this works only with laptop screen
+    if (displayId === 3) {
+        displayId = 1;
+    }
 
     useEffect(() => {
         // Initial load
