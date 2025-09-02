@@ -1,0 +1,1 @@
+I don't use nvim anymore but I need to rice somewhere.
